@@ -1,0 +1,285 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface":"#0f1418","on-primary":"#00344d","surface-bright":"#353a3e","on-background":"#dee3e9","on-secondary":"#003824","secondary-container":"#00a572","on-primary-fixed-variant":"#004c6e","on-surface":"#dee3e9","on-error":"#690005","tertiary-fixed":"#ffddb8","surface-tint":"#89ceff","on-tertiary":"#472a00","on-tertiary-fixed":"#2a1700","secondary-fixed-dim":"#4edea3","on-secondary-fixed-variant":"#005236","inverse-on-surface":"#2c3135","primary-container":"#0ea5e9","surface-container-highest":"#30353a","on-secondary-container":"#00311f","tertiary-container":"#d88a00","surface-container-high":"#252b2f","primary-fixed-dim":"#89ceff","surface-container-lowest":"#0a0f13","primary":"#89ceff","tertiary-fixed-dim":"#ffb95f","surface-dim":"#0f1418","on-tertiary-container":"#4a2c00","on-tertiary-fixed-variant":"#653e00","error-container":"#93000a","inverse-primary":"#006591","on-primary-fixed":"#001e2f","outline":"#88929b","error":"#ffb4ab","secondary-fixed":"#6ffbbe","on-primary-container":"#003751","inverse-surface":"#dee3e9","outline-variant":"#3e4850","secondary":"#4edea3","primary-fixed":"#c9e6ff","surface-container":"#1b2024","surface-variant":"#30353a","on-error-container":"#ffdad6","tertiary":"#ffb95f","on-surface-variant":"#bec8d2","background":"#0f1418","surface-container-low":"#171c20","on-secondary-fixed":"#002113"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"sidebar_width":"260px","xl":"32px","sm":"12px","lg":"24px","gutter":"20px","xs":"8px","base":"4px","md":"16px"},"fontFamily":{"display-lg":["Inter"],"body-sm":["Inter"],"code-sm":["JetBrains Mono"],"label-caps":["Inter"],"data-mono":["JetBrains Mono"],"headline-sm":["Inter"],"headline-md":["Inter"],"body-md":["Inter"]},"fontSize":{"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"data-mono":["14px",{"lineHeight":"20px","fontWeight":"450"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-background"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest flex flex-col z-50 border-r border-outline-variant/30"><div class="p-lg flex items-center gap-md"><img alt="MailOS Admin logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLt_mMzEarnqxkO4slwwcgFVH8GMYu1OUB69XjLbrquJgRXlRqG0pZHWlrbVPVrOx_-rJMHuOGNQksyKrvNgk5zPzyXkFljmIVpvT0EC46G5Wkaj4gUg82oYhc-W14JrxYCcyY6-T8OPf_g30rwYhtGSOJvvbj3JwlczvzfacsLUtEXE1cjK6UJblcA5NqJ_hvRSHWyokkRfuiDQWW59k0s5ENV6UHwzfjGspmLOtA5PwTBQsxn1yf2zWg"/><span class="font-headline-sm text-primary tracking-tight">MailOS</span></div><nav class="flex-1 mt-md px-base" data-active-classes="bg-primary/10 text-primary border-l-4 border-primary"><a class="flex items-center gap-md px-lg py-sm text-on-surface-variant hover:bg-surface-container-high transition-colors font-body-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span>Dashboard</a><a class="flex items-center gap-md px-lg py-sm text-on-surface-variant hover:bg-surface-container-high transition-colors font-body-sm" data-path="domains" href="#"><span class="material-symbols-outlined text-[20px]">language</span>Domains</a><a class="flex items-center gap-md px-lg py-sm text-on-surface-variant hover:bg-surface-container-high transition-colors font-body-sm" data-path="accounts" href="#"><span class="material-symbols-outlined text-[20px]">mail</span>Mailboxes</a><a class="flex items-center gap-md px-lg py-sm text-on-surface-variant hover:bg-surface-container-high transition-colors font-body-sm" data-path="queues" href="#"><span class="material-symbols-outlined text-[20px]">stacked_line_chart</span>Mail Queues</a><a class="flex items-center gap-md px-lg py-sm text-on-surface-variant hover:bg-surface-container-high transition-colors font-body-sm" data-path="services" href="#"><span class="material-symbols-outlined text-[20px]">settings_input_component</span>System Services</a><a aria-current="page" class="flex items-center gap-md px-lg py-sm transition-colors font-body-sm bg-primary/10 text-primary border-l-4 border-primary" data-path="health" href="#"><span class="material-symbols-outlined text-[20px]">monitor_heart</span>Server Health</a><a class="flex items-center gap-md px-lg py-sm text-on-surface-variant hover:bg-surface-container-high transition-colors font-body-sm" data-path="security" href="#"><span class="material-symbols-outlined text-[20px]">security</span>Security</a><a class="flex items-center gap-md px-lg py-sm text-on-surface-variant hover:bg-surface-container-high transition-colors font-body-sm" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span>Settings</a></nav><div class="p-lg border-t border-outline-variant/20 bg-surface-container-low"><div class="flex items-center gap-sm mb-sm"><div class="relative"><div class="w-2 h-2 rounded-full bg-secondary animate-pulse absolute -top-0.5 -right-0.5"></div><span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span></div><span class="font-label-caps text-secondary">System Operational</span></div><div class="flex items-center justify-between"><div class="flex items-center gap-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="text-[12px] font-bold text-on-surface leading-none">Admin</span><span class="text-[10px] text-on-surface-variant">Superuser</span></div></div><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-on-surface">logout</span></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 px-lg flex items-center justify-between border-b border-outline-variant/10"><div class="flex items-center gap-md"><span class="font-body-sm text-on-surface-variant">Root</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">chevron_right</span><span class="font-body-sm text-on-surface font-bold">Dashboard</span></div><div class="flex items-center gap-lg flex-1 max-w-2xl px-xl"><div class="relative w-full group"><span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors">search</span><input class="w-full bg-surface-container-high border-none rounded-lg pl-[44px] pr-md py-xs text-body-sm focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Search mail logs, accounts, or services..." type="text"/></div></div><div class="flex items-center gap-md"><button class="flex items-center gap-xs px-md py-xs bg-error-container text-on-error-container rounded-lg hover:brightness-110 transition-all font-label-caps"><span class="material-symbols-outlined text-[18px]">restart_alt</span>Restart Services</button><div class="flex gap-sm"><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-on-surface">notifications</span><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-on-surface">help</span></div></div></header><main class="relative pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full p-lg gap-lg font-body-md text-on-surface">
+<!-- Header Section -->
+<div class="flex flex-row justify-between items-end w-full">
+<div class="flex flex-col gap-xs">
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">System Telemetry</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">Real-time performance metrics, resource utilization, and thermal diagnostics for the primary node cluster.</p>
+</div>
+<div class="flex gap-sm">
+<button class="flex items-center gap-xs px-md py-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg transition-colors font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[18px]">history</span>
+                Historical Data
+            </button>
+<button class="flex items-center gap-xs px-md py-xs bg-primary text-on-primary rounded-lg hover:brightness-110 transition-all font-label-caps text-label-caps shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                Export Report
+            </button>
+</div>
+</div>
+<!-- Overview KPIs Grid -->
+<div class="grid grid-cols-4 gap-md w-full">
+<!-- System Uptime -->
+<div class="flex flex-col p-md bg-surface-container rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-sm opacity-20 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-[48px] text-primary">schedule</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-xs relative z-10">System Uptime</span>
+<div class="flex items-baseline gap-sm relative z-10">
+<span class="font-data-mono text-display-lg text-on-surface">42</span>
+<span class="font-code-sm text-code-sm text-primary">days</span>
+<span class="font-data-mono text-headline-md text-on-surface">18</span>
+<span class="font-code-sm text-code-sm text-primary">hrs</span>
+</div>
+<div class="mt-sm flex items-center gap-xs">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></div>
+<span class="font-code-sm text-code-sm text-secondary">No interruptions</span>
+</div>
+</div>
+<!-- Global CPU Load -->
+<div class="flex flex-col p-md bg-surface-container rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-sm opacity-20 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-[48px] text-tertiary">memory</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-xs relative z-10">Global CPU Load</span>
+<div class="flex items-baseline gap-xs relative z-10">
+<span class="font-data-mono text-display-lg text-tertiary">34.2</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">%</span>
+</div>
+<div class="mt-sm w-full bg-surface-container-highest rounded-full h-1 overflow-hidden relative z-10">
+<div class="bg-tertiary h-full rounded-full" style="width: 34.2%"></div>
+</div>
+</div>
+<!-- Memory Usage -->
+<div class="flex flex-col p-md bg-surface-container rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-sm opacity-20 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-[48px] text-secondary">dns</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-xs relative z-10">Memory Allocation</span>
+<div class="flex items-baseline gap-xs relative z-10">
+<span class="font-data-mono text-display-lg text-secondary">112</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">/ 256 GB</span>
+</div>
+<div class="mt-sm w-full bg-surface-container-highest rounded-full h-1 overflow-hidden relative z-10 flex">
+<div class="bg-secondary h-full" style="width: 43%"></div>
+<div class="bg-surface-variant h-full flex-1"></div>
+</div>
+</div>
+<!-- Thermal Status -->
+<div class="flex flex-col p-md bg-surface-container rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-sm opacity-20 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-[48px] text-error">device_thermostat</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-xs relative z-10">Core Temp (Avg)</span>
+<div class="flex items-baseline gap-xs relative z-10">
+<span class="font-data-mono text-display-lg text-on-surface">62</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">°C</span>
+</div>
+<div class="mt-sm flex items-center gap-xs relative z-10">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-error font-code-sm text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">warning</span>
+                    Elevated
+                </span>
+</div>
+</div>
+</div>
+<!-- Main Charts Layout -->
+<div class="grid grid-cols-12 gap-lg w-full">
+<!-- Left Column: Primary Metrics (8 cols) -->
+<div class="col-span-8 flex flex-col gap-lg">
+<!-- CPU Load Average (1m, 5m, 15m) -->
+<div class="bg-surface-container rounded-xl shadow-sm p-lg flex flex-col">
+<div class="flex justify-between items-center mb-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">stacked_line_chart</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Load Averages</h2>
+</div>
+<div class="flex gap-md font-code-sm text-code-sm">
+<div class="flex items-center gap-xs"><div class="w-2 h-2 rounded-full bg-primary"></div><span>1m: 4.12</span></div>
+<div class="flex items-center gap-xs"><div class="w-2 h-2 rounded-full bg-tertiary"></div><span>5m: 3.85</span></div>
+<div class="flex items-center gap-xs"><div class="w-2 h-2 rounded-full bg-surface-variant"></div><span>15m: 3.10</span></div>
+</div>
+</div>
+<!-- Chart Placeholder -->
+<div class="h-[240px] w-full relative">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 1000 240">
+<!-- Grid -->
+<line class="text-surface-variant/30" stroke="currentColor" stroke-dasharray="4" stroke-width="1" x1="0" x2="1000" y1="60" y2="60"></line>
+<line class="text-surface-variant/30" stroke="currentColor" stroke-dasharray="4" stroke-width="1" x1="0" x2="1000" y1="120" y2="120"></line>
+<line class="text-surface-variant/30" stroke="currentColor" stroke-dasharray="4" stroke-width="1" x1="0" x2="1000" y1="180" y2="180"></line>
+<!-- 15m Line -->
+<path class="text-surface-variant" d="M0,180 Q100,190 200,170 T400,160 T600,175 T800,150 T1000,165" fill="none" stroke="currentColor" stroke-width="2"></path>
+<!-- 5m Line -->
+<path class="text-tertiary" d="M0,150 Q150,140 250,160 T500,130 T750,145 T1000,120" fill="none" stroke="currentColor" stroke-width="2"></path>
+<!-- 1m Line -->
+<path class="text-primary" d="M0,120 Q120,80 280,110 T450,60 T680,90 T850,40 T1000,70" fill="none" stroke="currentColor" stroke-width="3"></path>
+<!-- Gradient Fill under 1m -->
+<path d="M0,120 Q120,80 280,110 T450,60 T680,90 T850,40 T1000,70 L1000,240 L0,240 Z" fill="url(#primaryGradient)" opacity="0.1"></path>
+<defs>
+<lineargradient id="primaryGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#89ceff" stop-opacity="1"></stop>
+<stop offset="100%" stop-color="#89ceff" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+<!-- Y Axis Labels -->
+<div class="absolute top-0 left-0 h-full flex flex-col justify-between py-2 text-on-surface-variant/50 font-code-sm text-[10px]">
+<span>8.00</span>
+<span>6.00</span>
+<span>4.00</span>
+<span>2.00</span>
+<span>0.00</span>
+</div>
+</div>
+</div>
+<!-- Network Throughput -->
+<div class="bg-surface-container rounded-xl shadow-sm p-lg flex flex-col">
+<div class="flex justify-between items-center mb-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary">lan</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Network I/O</h2>
+</div>
+<div class="flex gap-md font-code-sm text-code-sm">
+<div class="flex items-center gap-xs text-secondary"><span class="material-symbols-outlined text-[16px]">arrow_downward</span><span>In: 4.2 Gbps</span></div>
+<div class="flex items-center gap-xs text-tertiary"><span class="material-symbols-outlined text-[16px]">arrow_upward</span><span>Out: 1.8 Gbps</span></div>
+</div>
+</div>
+<div class="h-[180px] w-full relative">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 1000 180">
+<!-- Grid -->
+<line class="text-surface-variant/30" stroke="currentColor" stroke-dasharray="4" stroke-width="1" x1="0" x2="1000" y1="45" y2="45"></line>
+<line class="text-surface-variant/30" stroke="currentColor" stroke-dasharray="4" stroke-width="1" x1="0" x2="1000" y1="90" y2="90"></line>
+<line class="text-surface-variant/30" stroke="currentColor" stroke-dasharray="4" stroke-width="1" x1="0" x2="1000" y1="135" y2="135"></line>
+<!-- IN (Green) -->
+<path class="text-secondary" d="M0,150 L50,140 L100,160 L150,130 L200,90 L250,110 L300,70 L350,85 L400,50 L450,60 L500,40 L550,65 L600,45 L650,80 L700,60 L750,90 L800,75 L850,110 L900,95 L950,120 L1000,110" fill="none" stroke="currentColor" stroke-width="2"></path>
+<!-- OUT (Orange) -->
+<path class="text-tertiary" d="M0,170 L80,165 L160,175 L240,155 L320,160 L400,140 L480,150 L560,135 L640,145 L720,125 L800,130 L880,150 L960,145 L1000,160" fill="none" stroke="currentColor" stroke-dasharray="4" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- IOPS -->
+<div class="bg-surface-container rounded-xl shadow-sm p-lg flex flex-col">
+<div class="flex justify-between items-center mb-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-container">hard_drive</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Storage IOPS</h2>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Peak: 12.4k iops</span>
+</div>
+<div class="h-[120px] w-full relative flex items-end gap-[1px]">
+<!-- Bar Chart Simulation -->
+<script>
+                        document.write(Array.from({length: 100}).map((_, i) => {
+                            const height = Math.random() * 80 + 10;
+                            const isHigh = height > 70;
+                            const color = isHigh ? 'bg-primary-container' : 'bg-surface-container-highest';
+                            return `<div class="flex-1 ${color} opacity-80 hover:opacity-100 transition-opacity rounded-t-sm" style="height: ${height}%"></div>`;
+                        }).join(''));
+                    </script>
+</div>
+</div>
+</div>
+<!-- Right Column: Details & Top Processes (4 cols) -->
+<div class="col-span-4 flex flex-col gap-lg">
+<!-- CPU Core Map -->
+<div class="bg-surface-container rounded-xl shadow-sm p-md flex flex-col">
+<div class="flex items-center gap-sm mb-md px-sm pt-sm">
+<span class="material-symbols-outlined text-on-surface-variant">grid_view</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Core Utilization</h2>
+</div>
+<div class="grid grid-cols-4 gap-sm">
+<!-- Core cells generated via script for density -->
+<script>
+                        document.write(Array.from({length: 16}).map((_, i) => {
+                            const load = Math.random() * 100;
+                            let colorClass = 'bg-surface-container-highest text-on-surface-variant';
+                            if (load > 85) colorClass = 'bg-error/20 text-error ring-1 ring-error/50';
+                            else if (load > 60) colorClass = 'bg-tertiary/20 text-tertiary ring-1 ring-tertiary/50';
+                            else if (load > 30) colorClass = 'bg-primary/20 text-primary ring-1 ring-primary/50';
+
+                            return `
+                                <div class="flex flex-col items-center justify-center p-sm rounded-lg ${colorClass}">
+                                    <span class="font-label-caps text-[9px] uppercase opacity-70">Core ${i}</span>
+                                    <span class="font-data-mono text-body-sm mt-1">${load.toFixed(0)}%</span>
+                                </div>
+                            `;
+                        }).join(''));
+                    </script>
+</div>
+</div>
+<!-- Top Processes Terminal -->
+<div class="bg-black rounded-xl shadow-md flex flex-col flex-1 overflow-hidden border border-outline-variant/30 relative">
+<!-- Terminal Header -->
+<div class="bg-surface-container-highest px-md py-sm flex items-center justify-between border-b border-outline-variant/30">
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary"></div>
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+</div>
+<span class="font-code-sm text-[10px] text-on-surface-variant uppercase tracking-widest">top -n 1 -b</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant cursor-pointer hover:text-on-surface">content_copy</span>
+</div>
+<!-- Terminal Body -->
+<div class="p-md font-code-sm text-code-sm text-secondary-fixed opacity-90 flex-1 overflow-auto flex flex-col gap-1">
+<div class="flex text-on-surface-variant border-b border-surface-variant/50 pb-1 mb-1">
+<span class="w-16">PID</span>
+<span class="w-16">USER</span>
+<span class="w-16 text-right">PR</span>
+<span class="w-20 text-right">%CPU</span>
+<span class="w-20 text-right">%MEM</span>
+<span class="flex-1 ml-4">COMMAND</span>
+</div>
+<div class="flex hover:bg-surface-variant/30">
+<span class="w-16">18932</span>
+<span class="w-16">mysql</span>
+<span class="w-16 text-right">20</span>
+<span class="w-20 text-right text-error font-bold">142.5</span>
+<span class="w-20 text-right">18.4</span>
+<span class="flex-1 ml-4 truncate">mysqld --daemonize</span>
+</div>
+<div class="flex hover:bg-surface-variant/30">
+<span class="w-16">402</span>
+<span class="w-16">root</span>
+<span class="w-16 text-right">20</span>
+<span class="w-20 text-right text-tertiary">45.2</span>
+<span class="w-20 text-right">2.1</span>
+<span class="flex-1 ml-4 truncate">/usr/bin/dockerd</span>
+</div>
+<div class="flex hover:bg-surface-variant/30">
+<span class="w-16">19044</span>
+<span class="w-16">nginx</span>
+<span class="w-16 text-right">20</span>
+<span class="w-20 text-right">12.0</span>
+<span class="w-20 text-right">1.8</span>
+<span class="flex-1 ml-4 truncate">nginx: worker process</span>
+</div>
+<div class="flex hover:bg-surface-variant/30">
+<span class="w-16">933</span>
+<span class="w-16">redis</span>
+<span class="w-16 text-right">20</span>
+<span class="w-20 text-right">8.5</span>
+<span class="w-20 text-right">14.2</span>
+<span class="flex-1 ml-4 truncate">redis-server *:6379</span>
+</div>
+<div class="flex hover:bg-surface-variant/30">
+<span class="w-16">1</span>
+<span class="w-16">root</span>
+<span class="w-16 text-right">20</span>
+<span class="w-20 text-right">0.1</span>
+<span class="w-20 text-right">0.1</span>
+<span class="flex-1 ml-4 truncate">/sbin/init</span>
+</div>
+<div class="flex hover:bg-surface-variant/30 opacity-50">
+<span class="w-16">154</span>
+<span class="w-16">root</span>
+<span class="w-16 text-right">0</span>
+<span class="w-20 text-right">0.0</span>
+<span class="w-20 text-right">0.0</span>
+<span class="flex-1 ml-4 truncate">[kworker/u32:2]</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

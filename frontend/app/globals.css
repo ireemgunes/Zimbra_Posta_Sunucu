@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-width: 260px;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #0f1418;
+  color: #dee3e9;
+  font-family: 'Inter', sans-serif;
+  overscroll-behavior: none;
+}
+
+/* ==========================================================================
+   Silky Smooth 0.35s Theme Transition (Soft, Non-abrupt Daylight Fade)
+   ========================================================================== */
+body,
+header,
+aside,
+main,
+div,
+table,
+tr,
+td,
+th,
+input,
+select,
+button,
+span,
+section,
+article,
+a {
+  transition: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ==========================================================================
+   Clean & Elegant Light Mode Theme (Preserves Layout, Components & Contrast)
+   ========================================================================== */
+
+html.light body {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+html.light .bg-surface,
+html.light .bg-background,
+html.light .bg-surface-container-lowest {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-surface-container-low,
+html.light .bg-surface-container {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-surface-container-high,
+html.light .bg-surface-container-highest {
+  background-color: #e2e8f0 !important;
+}
+
+html.light .text-on-surface {
+  color: #0f172a !important;
+}
+
+html.light .text-on-surface-variant {
+  color: #475569 !important;
+}
+
+html.light .border-outline-variant\/10,
+html.light .border-outline-variant\/15,
+html.light .border-outline-variant\/20,
+html.light .border-outline-variant\/30,
+html.light .border-outline-variant\/40 {
+  border-color: #cbd5e1 !important;
+}
+
+html.light .divide-surface-container-highest > :not([hidden]) ~ :not([hidden]) {
+  border-color: #e2e8f0 !important;
+}
+
+/* Header & Sidebar in Light Mode */
+html.light header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light aside {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Sidebar Nav Hover in Light Mode (Clean Slate hover, never dark!) */
+html.light aside nav a:hover {
+  background-color: #f1f5f9 !important;
+  color: #0284c7 !important;
+}
+
+html.light .hover\:bg-surface-container:hover,
+html.light .hover\:bg-surface-container-high:hover,
+html.light .hover\:bg-surface-container-highest:hover {
+  background-color: #e2e8f0 !important;
+}
+
+/* Terminals & Log Snippets in Light Mode */
+html.light .bg-\[\#070b0e\] {
+  background-color: #0f172a !important;
+  color: #38bdf8 !important;
+}
+
+html.light .bg-\[\#0a0f13\] {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-\[\#2a1d0d\] {
+  background-color: #fef3c7 !important;
+  border-color: #fde68a !important;
+  color: #92400e !important;
+}
+
+html.light .shadow-md,
+html.light .shadow-lg,
+html.light .shadow-2xl {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04) !important;
+}
