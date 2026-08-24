@@ -1,0 +1,6 @@
+# GitHub Linguist Language Configuration
+tasarım/* linguist-documentation
+tasarım/**/* linguist-documentation
+*.json linguist-generated
+*.lock linguist-generated
+
